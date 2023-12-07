@@ -1,0 +1,215 @@
+:root {
+    --black-text-color: #2E2F42;
+    --gray-text-color: #434455;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------- header --------------- */
+.header {}
+
+.header-nav {}
+
+.main-logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.54px;
+    color: #2E2F42
+}
+
+.main-logo span {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+
+}
+
+.header-list {}
+
+
+.header-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+
+    color: var(--black-text-color);
+}
+
+.header-address {}
+
+.header-address-list {}
+
+.address-item {}
+
+.header-mail {}
+
+.header-phone {}
+
+/*---------------- hero --------------- */
+.hero {
+    background-color: var(--black-text-color);
+}
+
+.hero-logo {
+    font-size: 56px;
+
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.12px;
+    color: #FFFFFF;
+}
+
+.hero-button {
+    border-radius: 4px;
+    background: #4d5ae5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    color: #FFFFFF;
+
+}
+
+/*---------------- description --------------- */
+.description {}
+
+.description-logo {}
+
+.description-list {}
+
+.description-item {}
+
+.description-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--black-text-color);
+}
+
+.description-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--gray-text-color);
+
+}
+
+/*---------------- about us --------------- */
+.about-us {}
+
+.about-us-logo {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--black-text-color);
+}
+
+.about-us-list {}
+
+.about-us-item {}
+
+
+/*---------------- team --------------- */
+
+.team {}
+
+.team-logo {
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--black-text-color);
+}
+
+.team-list {}
+
+.team-member {}
+
+.team-member-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--black-text-color);
+}
+
+.team-member-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--gray-text-color);
+}
+
+
+/*---------------- footer --------------- */
+
+
+.footer {}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/*-------------------------------------- studio page ---------------------------------------- */
+/*---------------- tools --------------- */
+
+
+.tools {}
+
+.tools-menu-list {}
+
+.tools-menu-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    color: #4D5AE5;
+}
+
+
+.tools-list {}
+
+.tools-list-item {}
+
+.tools-pictures {}
+
+.tools-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--black-text-color);
+}
+
+.tools-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--gray-text-color);
+}
