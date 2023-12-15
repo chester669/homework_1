@@ -1,7 +1,7 @@
 :root {
     --black-text-color: #2E2F42;
     --gray-text-color: #434455;
-
+    --background-white: #ffffff
 }
 
 a {
@@ -10,16 +10,51 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*---------------- header --------------- */
-.header {}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-.header-nav {}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+
+/*---------------- header --------------- */
+.header {
+    background-color: var(--background-white);
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
 .main-logo {
     font-family: Raleway;
@@ -27,7 +62,7 @@ body {
     font-weight: 800;
     line-height: 1.16;
     letter-spacing: 0.54px;
-    color: #2E2F42
+    color: #2E2F42;
 }
 
 .main-logo span {
@@ -40,7 +75,14 @@ body {
 
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 76px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
 
 .header-item {
@@ -52,31 +94,53 @@ body {
     color: var(--black-text-color);
 }
 
-.header-address {}
+.header-address {
+    margin-left: auto;
+}
 
-.header-address-list {}
+.header-address-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    list-style: none;
+    text-decoration: none;
+}
 
 .address-item {}
 
-.header-mail {}
+.header-mail {
+    color: var(--gray-text-color);
+}
 
-.header-phone {}
+.header-phone {
+    color: var(--gray-text-color);
+}
 
 /*---------------- hero --------------- */
 .hero {
+    padding: 188px 0;
     background-color: var(--black-text-color);
 }
 
+.hero-container {}
+
 .hero-logo {
     font-size: 56px;
-
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.12px;
     color: #FFFFFF;
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-button {
+
     border-radius: 4px;
     background: #4d5ae5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -86,17 +150,30 @@ body {
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: #FFFFFF;
+    padding: 16px 32px;
+    min-width: 169px;
+    display: block;
+    margin: auto;
 
 }
 
 /*---------------- description --------------- */
-.description {}
+.description {
+    border-color: var(--background-white);
+    padding-top: 120px;
+}
 
 .description-logo {}
 
-.description-list {}
+.description-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
-.description-item {}
+.description-item {
+    max-width: 264px;
+}
 
 .description-item-title {
     font-size: 20px;
@@ -104,6 +181,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--black-text-color);
+    margin-bottom: 8px;
 }
 
 .description-item-text {
@@ -115,7 +193,11 @@ body {
 }
 
 /*---------------- about us --------------- */
-.about-us {}
+.about-us {
+    background-color: var(--background-white);
+    padding-top: 120px;
+
+}
 
 .about-us-logo {
     font-size: 36px;
@@ -123,16 +205,26 @@ body {
     line-height: 1.11;
     letter-spacing: 0.72px;
     color: var(--black-text-color);
+    text-align: center;
+    margin-bottom: 72px;
 }
 
-.about-us-list {}
+.about-us-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+
+}
 
 .about-us-item {}
 
 
 /*---------------- team --------------- */
 
-.team {}
+.team {
+    background-color: #F4F4FD;
+    padding-top: 120px;
+}
 
 .team-logo {
 
@@ -141,9 +233,21 @@ body {
     line-height: 1.11;
     letter-spacing: 0.72px;
     color: var(--black-text-color);
+    text-align: center;
+    margin-bottom: 72px;
+
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 0;
+}
+
+.team-description {
+    text-align: center;
+    margin: 32px 0;
+}
 
 .team-member {}
 
@@ -153,6 +257,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--black-text-color);
+    margin-bottom: 8px;
 }
 
 .team-member-desc {
@@ -167,21 +272,59 @@ body {
 /*---------------- footer --------------- */
 
 
-.footer {}
+.footer {
+    background-color: #2E2F42;
+    padding: 100px 0;
+}
+
+.footer-logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.54px;
+    color: #F4F4FD;
+
+}
+
+
+
+.footer-logo span {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+
+}
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    color: #F4F4FD;
+    max-width: 264px;
+    margin-top: 16px;
 }
 
 /*-------------------------------------- studio page ---------------------------------------- */
 /*---------------- tools --------------- */
 
 
-.tools {}
+.tools {
+    background-color: var(--background-white);
+}
 
-.tools-menu-list {}
+
+.tools-menu-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center;
+
+}
 
 .tools-menu-btn {
     font-size: 16px;
@@ -189,12 +332,24 @@ body {
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: #4D5AE5;
+    padding: 12px 24px;
+
 }
 
 
-.tools-list {}
+.tools-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    padding-bottom: 120px;
+}
 
-.tools-list-item {}
+.tools-list-item {
+    border: 1px solid #E7E9FC;
+    background: var(--background-white);
+    max-width: 360px;
+}
 
 .tools-pictures {}
 
@@ -203,7 +358,9 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    padding-bottom: 16px;
     color: var(--black-text-color);
+
 }
 
 .tools-text {
@@ -212,4 +369,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--gray-text-color);
+}
+
+.tools-card-text {
+    margin: 32px 16px;
+
 }
