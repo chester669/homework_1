@@ -1,7 +1,8 @@
 :root {
     --black-text-color: #2E2F42;
     --gray-text-color: #434455;
-    --background-white: #ffffff
+    --background-white: #ffffff;
+    --main-hover-focus-color: #404BBF
 }
 
 a {
@@ -92,6 +93,24 @@ img {
     letter-spacing: 0.32px;
 
     color: var(--black-text-color);
+
+
+}
+
+.header-list-active {
+    position: relative;
+}
+
+.header-list-active::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    border-radius: 2px;
+    background: #404BBF;
+    left: 0;
+    bottom: -28px;
+    height: 4px;
+    width: 100%;
 }
 
 .header-address {
@@ -122,10 +141,12 @@ img {
 /*---------------- hero --------------- */
 .hero {
     padding: 188px 0;
-    background-color: var(--black-text-color);
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/people-office.jpg);
+
 }
 
-.hero-container {}
+
 
 .hero-logo {
     font-size: 56px;
@@ -165,11 +186,26 @@ img {
 
 .description-logo {}
 
+
 .description-list {
     display: flex;
     align-items: center;
     gap: 24px;
 }
+
+.description-icon-place {
+    display: flex;
+    max-width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: #F4F4FD;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.description-icon {}
 
 .description-item {
     max-width: 264px;
@@ -242,14 +278,20 @@ img {
     display: flex;
     gap: 24px;
     margin-bottom: 0;
+    padding-bottom: 120px;
 }
 
 .team-description {
     text-align: center;
-    margin: 32px 0;
+    margin: 32px 16px;
+
 }
 
-.team-member {}
+.team-member {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
 .team-member-name {
     font-size: 20px;
@@ -266,11 +308,72 @@ img {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--gray-text-color);
+    margin-bottom: 8px;
 }
 
+.team-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-icon-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+
+
+}
+
+.team-icon {
+    fill: #F4F4FD;
+}
+
+/* ----------- customers ------------- */
+
+.customers-container {}
+
+.customers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.customer-title {
+    margin-top: 120px;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-align: center;
+}
+
+.customer-icon {
+    fill: #8E8F99;
+
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid;
+
+}
 
 /*---------------- footer --------------- */
 
+.footer-container {
+    display: flex;
+}
 
 .footer {
     background-color: #2E2F42;
@@ -306,6 +409,39 @@ img {
     color: #F4F4FD;
     max-width: 264px;
     margin-top: 16px;
+}
+
+.footer-social-media {
+    margin-left: 120px;
+}
+
+.footer-media-logo {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #FFF;
+    margin-bottom: 16px;
+
+}
+
+.footer-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-icon-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.footer-icon {
+    fill: #F4F4FD;
 }
 
 /*-------------------------------------- studio page ---------------------------------------- */
@@ -374,4 +510,54 @@ img {
 .tools-card-text {
     margin: 32px 16px;
 
+}
+
+/* -------------hover-focus-------------- */
+/* -----------header--------------- */
+.header-item:hover,
+.header-item:focus {
+    color: var(--main-hover-focus-color)
+}
+
+.header-mail-phone:hover,
+.header-mail-phone:focus {
+    color: var(--main-hover-focus-color)
+}
+
+/* -------hero------- */
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--main-hover-focus-color);
+}
+
+/* ------our team------ */
+.team-icon-place:hover,
+.team-icon-place:focus {
+    background-color: #31D0AA;
+}
+
+/* ---customers---- */
+.customers-item:hover .customer-icon,
+.customers-item:focus .customer-icon:focus {
+    fill: var(--main-hover-focus-color);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+    border-color: var(--main-hover-focus-color);
+}
+
+/* --------footer-------- */
+.footer-icon-place:hover,
+.footer-icon-place:focus {
+    background-color: #31D0AA;
+}
+
+/* ----studio tools menu button -----*/
+
+.tools-menu-btn:hover,
+.tools-menu-btn:focus {
+    background-color: var(--main-hover-focus-color);
+    color: var(--background-white);
 }
