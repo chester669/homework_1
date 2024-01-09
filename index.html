@@ -28,6 +28,7 @@
       <div class="container header-container">
         <nav class="header-nav">
           <a class="main-logo" href="./index.html"><span>web</span>studio</a>
+
           <ul class="header-list">
             <li>
               <a class="header-item header-list-active" href="./index.html"
@@ -63,7 +64,13 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-logo">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button
+            class="hero-button data-modal-open"
+            data-modal-open
+            type="button"
+          >
+            Order Service
+          </button>
         </div>
       </section>
       <!-- description text -->
@@ -379,6 +386,18 @@
         </div>
       </div>
     </footer>
-    <div class="backdrope"></div>
+    <div class="backdrope is-hidden" data-modal>
+      <div class="backdrope-modal">
+        <button class="backdrope-button-close" data-modal-close type="button">
+          <svg class="backdrope-icon-place" width="8" height="8">
+            <use
+              href="./images/icons.svg#close-button"
+              class="backdrope-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>

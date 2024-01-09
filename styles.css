@@ -2,7 +2,8 @@
     --black-text-color: #2E2F42;
     --gray-text-color: #434455;
     --background-white: #ffffff;
-    --main-hover-focus-color: #404BBF
+    --main-hover-focus-color: #404BBF;
+    --hover-focus: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a {
@@ -141,6 +142,8 @@ img {
 /*---------------- hero --------------- */
 .hero {
     padding: 188px 0;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/people-office.jpg);
 
@@ -444,7 +447,7 @@ img {
     fill: #F4F4FD;
 }
 
-/*-------------------------------------- studio page ---------------------------------------- */
+/*------------------------------- studio page ---------------------------------- */
 /*---------------- tools --------------- */
 
 
@@ -468,6 +471,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: #4D5AE5;
+    background-color: #F4F4FD;
+    border-color: #E7E9FC;
     padding: 12px 24px;
 
 }
@@ -485,16 +490,42 @@ img {
     border: 1px solid #E7E9FC;
     background: var(--background-white);
     max-width: 360px;
+    max-height: 420px;
 }
 
-.tools-pictures {}
+.tools-card {
+    width: 360px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.tools-hidden {
+    background-color: #4D5AE5;
+    position: absolute;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    transform: translateY(100%);
+}
+
+.tools-hidden-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #F4F4FD;
+}
+
 
 .tools-name {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     color: var(--black-text-color);
 
 }
@@ -514,9 +545,18 @@ img {
 
 /* -------------hover-focus-------------- */
 /* -----------header--------------- */
+
+.header-item {
+    transition: color var(--hover-focus);
+}
+
 .header-item:hover,
 .header-item:focus {
     color: var(--main-hover-focus-color)
+}
+
+.header-mail-phone {
+    transition: color var(--hover-focus);
 }
 
 .header-mail-phone:hover,
@@ -526,21 +566,40 @@ img {
 
 /* -------hero------- */
 
+.hero-button {
+    transition: background-color var(--hover-focus);
+}
+
+
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--main-hover-focus-color);
 }
 
 /* ------our team------ */
+
+.team-icon-place {
+    transition: background-color var(--hover-focus);
+}
+
 .team-icon-place:hover,
 .team-icon-place:focus {
     background-color: #31D0AA;
 }
 
 /* ---customers---- */
+.customer-icon {
+    transition: fill var(--hover-focus);
+}
+
 .customers-item:hover .customer-icon,
 .customers-item:focus .customer-icon:focus {
     fill: var(--main-hover-focus-color);
+}
+
+
+.customers-item {
+    transition: border-color var(--hover-focus);
 }
 
 .customers-item:hover,
@@ -549,6 +608,11 @@ img {
 }
 
 /* --------footer-------- */
+
+.footer-icon-place {
+    transition: background-color var(--hover-focus);
+}
+
 .footer-icon-place:hover,
 .footer-icon-place:focus {
     background-color: #31D0AA;
@@ -556,8 +620,81 @@ img {
 
 /* ----studio tools menu button -----*/
 
+.tools-menu-btn {
+    transition: background-color var(--hover-focus), color var(--hover-focus);
+}
+
+
 .tools-menu-btn:hover,
 .tools-menu-btn:focus {
     background-color: var(--main-hover-focus-color);
     color: var(--background-white);
+}
+
+/* ----------- studio pictures cards ------------ */
+.tools-hidden {
+    transition: transform var(--hover-focus);
+}
+
+.tools-list-item:hover .tools-hidden,
+.tools-list-item:hover .tools-hidden {
+    transform: translate(0);
+}
+
+/*  -------- backdrope ----------- */
+
+.backdrope {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity var(--hover-focus), visibility var(--hover-focus);
+
+}
+
+.backdrope-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--hover-focus);
+    width: 408px;
+    min-height: 584px;
+    background-color: #FCFCFC;
+}
+
+.backdrope.is-hidden .backdrope-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+/* .backdrope-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+.backdrope-button-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid;
+    border-color: #0000001A;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
