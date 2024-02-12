@@ -21,10 +21,12 @@ body {
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
 }
+
 
 p,
 h1,
@@ -43,7 +45,7 @@ img {
 
 
 /*---------------- header --------------- */
-.header {
+/* .header {
     background-color: var(--background-white);
     border-bottom: 1px solid #E7E9FC;
 }
@@ -137,28 +139,28 @@ img {
 
 .header-phone {
     color: var(--gray-text-color);
-}
+} */
 
 /*---------------- hero --------------- */
 .hero {
-    padding: 188px 0;
+    padding: 112px 38px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-mobile.jpg);
 
 }
 
 
 
 .hero-logo {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.12px;
-    color: #FFFFFF;
-    max-width: 496px;
-    margin-bottom: 48px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    max-width: 320px;
+    margin-bottom: 72px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -169,7 +171,6 @@ img {
     background: #4d5ae5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
@@ -178,13 +179,14 @@ img {
     min-width: 169px;
     display: block;
     margin: auto;
+    cursor: pointer;
 
 }
 
 /*---------------- description --------------- */
 .description {
     border-color: var(--background-white);
-    padding-top: 120px;
+    padding: 96px 0;
 }
 
 .description-logo {}
@@ -192,35 +194,42 @@ img {
 
 .description-list {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 72px;
 }
 
 .description-icon-place {
-    display: flex;
+    display: none;
+    /* display: flex;
     max-width: 264px;
     height: 112px;
     border-radius: 4px;
     background: #F4F4FD;
     margin-bottom: 8px;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
 }
 
-.description-icon {}
+.description-icon {
+    display: none;
+}
 
 .description-item {
-    max-width: 264px;
+    /* max-width: 396px; */
+
 }
 
 .description-item-title {
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
     color: var(--black-text-color);
     margin-bottom: 8px;
+    text-align: center;
+
 }
 
 .description-item-text {
@@ -232,7 +241,7 @@ img {
 }
 
 /*---------------- about us --------------- */
-.about-us {
+/* .about-us {
     background-color: var(--background-white);
     padding-top: 120px;
 
@@ -255,18 +264,17 @@ img {
 
 }
 
-.about-us-item {}
+.about-us-item {} */
 
 
 /*---------------- team --------------- */
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
+    padding: 96px 0;
 }
 
 .team-logo {
-
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -279,9 +287,9 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
-    margin-bottom: 0;
-    padding-bottom: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .team-description {
@@ -338,18 +346,20 @@ img {
 
 /* ----------- customers ------------- */
 
-.customers-container {}
+.customers-container {
+    padding: 96px 0;
+}
 
 .customers-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    margin-bottom: 120px;
+    gap: 72px 16px;
+
 }
 
 .customer-title {
-    margin-top: 120px;
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -364,7 +374,7 @@ img {
 }
 
 .customers-item {
-    width: 168px;
+    width: calc((100% - 16px)/2);
     height: 88px;
     padding: 16px 32px;
     border-radius: 4px;
@@ -373,15 +383,20 @@ img {
 }
 
 /*---------------- footer --------------- */
-
-.footer-container {
-    display: flex;
-}
-
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
+
+.footer-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
 
 .footer-logo {
     font-family: Raleway;
@@ -390,6 +405,9 @@ img {
     line-height: 1.16;
     letter-spacing: 0.54px;
     color: #F4F4FD;
+
+
+
 
 }
 
@@ -403,6 +421,8 @@ img {
     letter-spacing: 0.03em;
     color: #4D5AE5;
 
+
+
 }
 
 .footer-text {
@@ -410,12 +430,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: #F4F4FD;
-    max-width: 264px;
+    max-width: 268px;
+    margin: auto;
     margin-top: 16px;
 }
 
 .footer-social-media {
-    margin-left: 120px;
+    margin-top: 72px;
 }
 
 .footer-media-logo {
@@ -431,6 +452,8 @@ img {
 .footer-icons {
     display: flex;
     gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-icon-place {
@@ -445,6 +468,73 @@ img {
 
 .footer-icon {
     fill: #F4F4FD;
+}
+
+.footer-input {
+    margin-top: 72px;
+
+}
+
+.footer-input-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.footer-input-form {
+    /* display: flex;
+    align-items: center; */
+}
+
+.footer-input-email {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    margin-right: 24px;
+    outline: none;
+    color: #FFF;
+}
+
+.footer-input-email::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    color: #FFF;
+
+}
+
+.footer-input-email:hover,
+.footer-input-email:focus {
+    border-color: #4D5AE5;
+}
+
+.footer-form {
+    margin-bottom: 16px;
+}
+
+.footer-input-btn {
+    width: 165px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    color: #FFF;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+    margin: auto;
 }
 
 /*------------------------------- studio page ---------------------------------- */
@@ -631,6 +721,8 @@ img {
     color: var(--background-white);
 }
 
+
+
 /* ----------- studio pictures cards ------------ */
 .tools-hidden {
     transition: transform var(--hover-focus);
@@ -641,19 +733,19 @@ img {
     transform: translate(0);
 }
 
-/*  -------- backdrope ----------- */
+/*  -------- backdrop ----------- */
 
-.backdrope {
+.backdrop {
     top: 0;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
     transition: opacity var(--hover-focus), visibility var(--hover-focus);
-
 }
 
-.backdrope-modal {
+.backdrop-modal {
+    padding: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -662,20 +754,15 @@ img {
     width: 408px;
     min-height: 584px;
     background-color: #FCFCFC;
+    border-radius: 4px;
+    background: #FCFCFC;
 }
 
-.backdrope.is-hidden .backdrope-modal {
+.backdrop.is-hidden .backdrop-modal {
     transform: translate(-50%, -50%) scale(0);
 }
 
-/* .backdrope-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
-.backdrope-button-close {
+.backdrop-button-close {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -689,9 +776,157 @@ img {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: background-color var(--hover-focus)
+}
+
+.backdrop-icon-close {
+    transition: fill var(--hover-focus);
+
+}
+
+.backdrop-icon-place {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.backdrop-button-close:hover {
+    background-color: #404BBF;
+}
+
+.backdrop-button-close:hover .backdrop-icon-close {
+    fill: #FFFFFF;
+}
+
+.backdrop-title {
+    margin-top: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--black-text-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.backdrop-name-section {
+    margin-bottom: 8px;
+}
+
+.backdrop-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    color: #8E8F99;
+}
+
+.backdrop-user-info {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding: 11px 38px;
+    resize: none;
+    outline: none;
+    transition: border-color var(--hover-focus);
+}
+
+.backdrop-icon-place {
+    transition: fill var(--hover-focus);
 }
 
 
+
+.backdrop-form-name {
+    position: relative;
+}
+
+.backdrop-user-info:hover,
+.backdrop-user-info:focus {
+    border-color: #4D5AE5;
+}
+
+
+.backdrop-user-info:hover+.backdrop-icon-place {
+    fill: #4D5AE5;
+}
+
+.backdrop-comment {
+    height: 120px;
+}
+
+
+.backdrop-comment::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+}
+
+.backdrop-checkbox-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    color: #8E8F99;
+    display: flex;
+    align-items: center;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.backdrop-checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: #2E2F4266;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+
+}
+
+.backdrop-privacy:checked+.backdrop-checkbox-text span {
+    background-color: #404BBF;
+    fill: #F4F4FD;
+    border: none;
+}
+
+.backdrop-button-send {
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    min-width: 169px;
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+    cursor: pointer;
+}
 
 .is-hidden {
     visibility: hidden;
