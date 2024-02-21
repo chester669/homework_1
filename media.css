@@ -3,3 +3,111 @@
         max-width: 428px;
     }
 }
+
+/* ------------ table -------------- */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /*-------- header------ */
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-address {
+        display: inline;
+    }
+
+
+    /* -------------- hero ---------------- */
+    .hero-logo {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    /* ---------- strategy -------------- */
+    .description-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+
+    }
+
+    .description-item {
+        max-width: 356px;
+        text-align: start;
+
+    }
+
+    .description-item-title {
+        text-align: start;
+    }
+
+    .description-item-text {
+        text-align: start;
+    }
+
+    /*---------------- team --------------- */
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    /* ----------- customers ------------- */
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-item {
+        width: 168px;
+
+    }
+
+    /*---------------- footer --------------- */
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+        gap: 72px 24px;
+    }
+
+
+
+    .footer-social-media {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .footer-input {
+        margin-top: 0;
+    }
+
+    .footer-input-email {
+        width: 264px;
+    }
+
+    .footer-form {
+        width: 264px;
+    }
+
+    .footer-input-btn {
+        margin-top: 40px;
+    }
+
+    .footer-input-text {
+        margin-top: 0;
+    }
+
+    .footer-input-form {
+        margin-bottom: 0;
+    }
+}

@@ -25,11 +25,10 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
+        <a class="main-logo" href="./index.html"><span>web</span>studio</a>
         <nav class="header-nav">
-          <a class="main-logo" href="./index.html"><span>web</span>studio</a>
-
           <ul class="header-list">
             <li>
               <a class="header-item header-list-active" href="./index.html"
@@ -42,7 +41,7 @@
         </nav>
         <address class="header-address">
           <ul class="header-address-list">
-            <li class="header-address-item">
+            <li class="header-address-item header-address-mail">
               <a
                 class="header-mail header-mail-phone"
                 href="mailto:info@devstudio.com"
@@ -58,8 +57,13 @@
             </li>
           </ul>
         </address>
+        <div class="header-menu-btn">
+          <svg class="header-menu" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- hero -->
       <section class="hero">
@@ -387,27 +391,29 @@
             </div>
           </div>
         </div>
-        <div class="footer-input">
+        <!--/ <div class="footer-input"> -->
+        <div class="footer-input-form">
           <p class="footer-input-text">Subscribe</p>
-          <div class="footer-input-form">
-            <form class="footer-form">
-              <label for="footer-email" aria-label="email"></label>
-              <input
-                type="email"
-                name="footer-email"
-                id="footer-email"
-                placeholder="E-mail"
-                class="footer-input-email"
-              />
-            </form>
-            <button type="button" class="footer-input-btn">
-              Subscribe
-              <svg class="footer-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
-          </div>
+          <form class="footer-form">
+            <label for="footer-email" aria-label="email"></label>
+            <input
+              type="email"
+              name="footer-email"
+              id="footer-email"
+              placeholder="E-mail"
+              class="footer-input-email"
+            />
+          </form>
         </div>
+        <div class="footer-btn">
+          <button type="button" class="footer-input-btn">
+            Subscribe
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- </div> -->
       </div>
     </footer>
     <!-- --------------------- backdrop-------------------- -->
