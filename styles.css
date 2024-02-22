@@ -419,15 +419,11 @@ img {
     padding: 96px 0;
 }
 
-.footer-container {
-    align-items: center;
-    justify-content: center;
+.footer-container {}
+
+.footer-logo-text {
     text-align: center;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
-
-
 
 .footer-logo {
     font-family: Raleway;
@@ -438,11 +434,7 @@ img {
     color: #F4F4FD;
 
 
-
-
 }
-
-
 
 .footer-logo span {
     font-family: Raleway;
@@ -462,12 +454,14 @@ img {
     letter-spacing: 0.32px;
     color: #F4F4FD;
     max-width: 268px;
+    margin-top: 16px;
     margin: auto;
     margin-top: 16px;
 }
 
 .footer-social-media {
     margin-top: 72px;
+    text-align: center;
 }
 
 .footer-media-logo {
@@ -501,6 +495,9 @@ img {
     fill: #F4F4FD;
 }
 
+.footer-input {
+    text-align: center;
+}
 
 .footer-input-text {
     font-size: 16px;
@@ -510,11 +507,7 @@ img {
     color: #FFF;
     margin-bottom: 16px;
     margin-top: 72px;
-}
 
-.footer-input-form {
-    /* display: flex;
-    align-items: center; */
 }
 
 .footer-input-email {
@@ -544,7 +537,7 @@ img {
     border-color: #4D5AE5;
 }
 
-.footer-input-form {
+.footer-form {
     margin-bottom: 16px;
 }
 
