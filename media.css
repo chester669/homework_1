@@ -25,6 +25,10 @@
         display: inline;
     }
 
+    .footer-input-text {
+        margin-top: 48px;
+    }
+
 
     /* -------------- hero ---------------- */
     .hero-logo {
@@ -118,14 +122,45 @@
 }
 
 /* ----- computer --------- */
-/*-------------- footer ------------ */
-
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
 
 
     }
+
+    /* ---------- header -------- */
+
+
+
+    .header-container {
+        justify-content: start;
+    }
+
+    .header-nav {
+        margin-left: 76px;
+    }
+
+    .header-list {}
+
+    .header-address {
+        margin-left: auto;
+    }
+
+    .header-address-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-mail-phone {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+
+    /*-------------- footer ------------ */
+
+
 
     .footer {
         background-color: #2E2F42;
@@ -139,6 +174,7 @@
         gap: 0;
 
     }
+
 
     .footer-text {
         min-width: 268px;

@@ -53,8 +53,6 @@ img {
 
 .header-container {
     display: flex;
-    /* align-items: center;
-    text-align: center; */
     height: 70px;
     align-items: center;
     justify-content: space-between;
@@ -136,15 +134,12 @@ img {
     display: none;
 }
 
-.header-address-list {
-    /* display: flex;
-    align-items: center;
-    margin-right: auto;
-    gap: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    list-style: none;
-    text-decoration: none; */
+.header-mail-phone {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    color: var(--gray-text-color);
 }
 
 .address-item {}
@@ -153,24 +148,6 @@ img {
     margin-bottom: 12px;
 }
 
-.header-mail {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.48px;
-
-    color: var(--gray-text-color);
-
-}
-
-.header-phone {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.48px;
-    color: var(--gray-text-color);
-
-}
 
 /*---------------- hero --------------- */
 .hero {
@@ -507,7 +484,6 @@ img {
     color: #FFF;
     margin-bottom: 16px;
     margin-top: 72px;
-
 }
 
 .footer-input-email {
