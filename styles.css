@@ -59,8 +59,6 @@ img {
 
 }
 
-.header-nav {}
-
 .main-logo {
     font-family: Raleway;
     font-size: 18px;
@@ -93,44 +91,12 @@ img {
 
 
 .header-list {
-    display: flex;
     align-items: center;
-    /* gap: 40px;
-    margin-left: 76px;
-    margin-top: 24px;
-    margin-bottom: 24px; */
     display: none;
 }
 
 
-.header-item {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-
-    color: var(--black-text-color);
-
-}
-
-.header-list-active {
-    position: relative;
-}
-
-.header-list-active::after {
-    content: '';
-    position: absolute;
-    display: flex;
-    border-radius: 2px;
-    background: #404BBF;
-    left: 0;
-    bottom: -28px;
-    height: 4px;
-    width: 100%;
-}
-
 .header-address {
-    /* margin-left: auto; */
     display: none;
 }
 
@@ -142,14 +108,12 @@ img {
     color: var(--gray-text-color);
 }
 
-.address-item {}
-
 .header-address-mail {
     margin-bottom: 12px;
 }
 
-
 /*---------------- hero --------------- */
+
 .hero {
     padding: 112px 0;
     background-repeat: no-repeat;
@@ -197,35 +161,22 @@ img {
     padding: 96px 0;
 }
 
-.description-logo {}
-
 
 .description-list {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     gap: 72px;
 }
 
 .description-icon-place {
     display: none;
-    /* display: flex;
     max-width: 264px;
     height: 112px;
     border-radius: 4px;
     background: #F4F4FD;
     margin-bottom: 8px;
     align-items: center;
-    justify-content: center; */
-
-}
-
-.description-icon {
-    display: none;
-}
-
-.description-item {
-    /* max-width: 396px; */
+    justify-content: center;
 
 }
 
@@ -244,35 +195,11 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    font-weight: 500;
     color: var(--gray-text-color);
 
 }
 
-/*---------------- about us --------------- */
-/* .about-us {
-    background-color: var(--background-white);
-    padding-top: 120px;
-
-}
-
-.about-us-logo {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    color: var(--black-text-color);
-    text-align: center;
-    margin-bottom: 72px;
-}
-
-.about-us-list {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 120px;
-
-}
-
-.about-us-item {} */
 
 
 /*---------------- team --------------- */

@@ -21,6 +21,15 @@
         gap: 40px;
     }
 
+    .header-item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        color: var(--black-text-color);
+
+    }
+
     .header-address {
         display: inline;
     }
@@ -158,12 +167,108 @@
         letter-spacing: 0.32px;
     }
 
+    /*  ------------- hero ------------ */
+    .hero {
+        padding: 188px 0;
+    }
+
+    .hero-logo {
+        margin-bottom: 48px;
+    }
+
+    /*---------------- description --------------- */
+    .description {
+        padding: 120px 0;
+    }
+
+    .description-icon-place {
+        display: flex;
+
+    }
+
+    .description-item {
+        max-width: 264px;
+
+
+    }
+
+
+    .description-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .description-item-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+    }
+
+
+    .description-item-text {
+        font-weight: 400;
+    }
+
+
+    /*---------------- about us --------------- */
+    .about-us {
+        background-color: var(--background-white);
+        padding-bottom: 120px;
+
+    }
+
+    .about-us-logo {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        color: var(--black-text-color);
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .about-us-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .about-us-item {}
+
+
+    /*---------------- team --------------- */
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 24px;
+    }
+
+    /* ----------- customers ------------- */
+
+    .customers-container {
+        padding: 120px 0;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+
+    }
+
+    .customers-item {
+        width: calc((100% - 24px)/6);
+    }
+
     /*-------------- footer ------------ */
 
 
 
     .footer {
-        background-color: #2E2F42;
         padding: 100px 0;
     }
 
