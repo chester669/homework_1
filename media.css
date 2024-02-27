@@ -288,12 +288,10 @@
     .footer-social-media {
         margin-left: 120px;
         margin-top: 0;
+        text-align: start;
+
     }
 
-    .footer-social-media {
-        margin-top: 0;
-        text-align: start;
-    }
 
     .footer-input {
         margin-left: 80px;
