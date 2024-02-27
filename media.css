@@ -70,6 +70,8 @@
         text-align: start;
     }
 
+
+
     /*---------------- team --------------- */
     .team-list {
         gap: 64px 24px;
@@ -213,27 +215,10 @@
 
     /*---------------- about us --------------- */
     .about-us {
-        background-color: var(--background-white);
-        padding-bottom: 120px;
-
+        display: block;
     }
 
-    .about-us-logo {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.72px;
-        color: var(--black-text-color);
-        text-align: center;
-        margin-bottom: 72px;
-    }
 
-    .about-us-list {
-        display: flex;
-        gap: 24px;
-    }
-
-    .about-us-item {}
 
 
     /*---------------- team --------------- */
