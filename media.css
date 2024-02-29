@@ -34,10 +34,9 @@
         display: inline;
     }
 
-    .footer-input-text {
-        margin-top: 48px;
+    .header-address-mail {
+        margin-bottom: 12px;
     }
-
 
     /* -------------- hero ---------------- */
     .hero-logo {
@@ -130,7 +129,16 @@
         margin-bottom: 0;
     }
 
+    /* ------------ backdrope ----------- */
+    .backdrop {
+        display: block;
+    }
+
 }
+
+
+
+
 
 /* ----- computer --------- */
 @media screen and (min-width: 1158px) {
@@ -158,9 +166,14 @@
         margin-left: auto;
     }
 
+    .header-address-mail {
+        margin-bottom: 0;
+    }
+
     .header-address-list {
         display: flex;
         gap: 40px;
+
     }
 
     .header-mail-phone {
@@ -168,6 +181,7 @@
         line-height: 1.5;
         letter-spacing: 0.32px;
     }
+
 
     /*  ------------- hero ------------ */
     .hero {

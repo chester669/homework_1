@@ -81,14 +81,14 @@ img {
 
 .header-menu-btn {
     transform: translateY(2px);
+    border: none;
+    background-color: transparent;
 }
 
-.header-menu {
+.header-menu-open {
     stroke: #2E2F42;
 
 }
-
-
 
 .header-list {
     align-items: center;
@@ -106,10 +106,6 @@ img {
     line-height: 1.16;
     letter-spacing: 0.48px;
     color: var(--gray-text-color);
-}
-
-.header-address-mail {
-    margin-bottom: 12px;
 }
 
 /*---------------- hero --------------- */
@@ -684,6 +680,7 @@ img {
 /*  -------- backdrop ----------- */
 
 .backdrop {
+    display: none;
     top: 0;
     position: fixed;
     width: 100%;
@@ -724,19 +721,13 @@ img {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color var(--hover-focus)
+    transition: background-color var(--hover-focus);
+    transition: fill var(--hover-focus);
 }
 
 .backdrop-icon-close {
     transition: fill var(--hover-focus);
 
-}
-
-.backdrop-icon-place {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .backdrop-button-close:hover {
@@ -880,4 +871,100 @@ img {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+
+
+/*  ------------ header - menu --------------- */
+.header-menu {
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-white);
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #E7E9FC;
+    background-color: var(--background-white);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-icon-close {
+    width: 8px;
+    height: 8px;
+
+}
+
+.menu-list {}
+
+.menu-item {
+    color: var(--black-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    margin: 40px 0;
+    transition: color var(--hover-focus);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: #404BBF;
+}
+
+.menu-contacts {
+    margin-bottom: auto;
+}
+
+.menu-adress {
+
+    margin-bottom: 48px;
+}
+
+.header-menu-phone {
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    margin-bottom: 40px;
+
+}
+
+.menu-mail {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--gray-text-color);
+}
+
+.menu-icon-list {
+    display: flex;
+    gap: 56px;
+}
+
+.menu-icon-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.menu-icon {
+    fill: #F4F4FD;
 }
