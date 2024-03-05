@@ -95,6 +95,22 @@ img {
     display: none;
 }
 
+.header-list-active {
+    position: relative;
+}
+
+
+.header-list-active::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    top: 42px;
+}
+
 
 .header-address {
     display: none;
@@ -119,7 +135,13 @@ img {
 
 }
 
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-mobile-2x.jpg);
+    }
+}
 
 .hero-logo {
     font-size: 36px;
@@ -680,7 +702,6 @@ img {
 /*  -------- backdrop ----------- */
 
 .backdrop {
-    display: none;
     top: 0;
     position: fixed;
     width: 100%;
@@ -696,7 +717,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--hover-focus);
-    width: 408px;
+    width: 100%;
+    max-width: 408px;
     min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -774,6 +796,12 @@ img {
 
 .backdrop-icon-place {
     transition: fill var(--hover-focus);
+    position: absolute;
+    left: 16px;
+    top: 8px;
+
+
+
 }
 
 
