@@ -30,6 +30,15 @@
 
     }
 
+    .header-item {
+        transition: color var(--hover-focus);
+    }
+
+    .header-item:hover,
+    .header-item:focus {
+        color: var(--main-hover-focus-color)
+    }
+
     .header-address {
         display: inline;
     }
@@ -144,6 +153,36 @@
     /* ------------ backdrope ----------- */
 
 
+    /* ============ portfolio =============== */
+
+
+    .tools-menu-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+        margin: 64px 0;
+        justify-content: center;
+
+    }
+
+    .tools-menu-btn {
+        padding: 12px 24px;
+
+    }
+
+    .tools-list {
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        padding-bottom: 96px;
+    }
+
+    .tools-list-item {
+        border: 1px solid #E7E9FC;
+        background: var(--background-white);
+        width: calc((100% - 24px)/2);
+        height: 420px;
+    }
+
 }
 
 
@@ -153,9 +192,7 @@
 /* ----- computer --------- */
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
-
-
+        max-width: 1160px;
     }
 
     /* ---------- header -------- */
@@ -324,4 +361,22 @@
     .footer-input-form {
         gap: 24px;
     }
+
+
+    /*  ============ portfolio ============ */
+    .tools-menu-list {
+        margin-top: 100px;
+        margin-bottom: 72px;
+
+    }
+
+    .tools-list {
+        gap: 48px 24px;
+        padding-bottom: 120px;
+    }
+
+    .tools-list-item {
+        width: 360px;
+    }
+
 }

@@ -23,17 +23,20 @@
     />
 
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./media.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container header-container">
+        <a class="main-logo" href="./index.html"><span>web</span>studio</a>
         <nav class="header-nav">
-          <a class="main-logo" href="./index.html"><span>web</span>studio</a>
           <ul class="header-list">
-            <li><a class="header-item" href="./index.html">Studio</a></li>
             <li>
-              <a class="header-item header-list-active" href="./studio.html"
+              <a class="header-item" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="header-item header-list-active" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -42,14 +45,14 @@
         </nav>
         <address class="header-address">
           <ul class="header-address-list">
-            <li class="address-item">
+            <li class="header-address-item header-address-mail">
               <a
                 class="header-mail header-mail-phone"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-item">
+            <li class="header-address-item">
               <a
                 class="header-phone header-mail-phone"
                 href="tell:+11(000)1111111"
@@ -58,6 +61,11 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu-btn" data-menu-open>
+          <svg class="header-menu-open" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -353,5 +361,63 @@
         </div>
       </div>
     </footer>
+    <!------ header-menu-------- -->
+    <div class="header-menu is-hidden" data-menu>
+      <div class="menu-info">
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="menu-icon-close" width="24" height="24">
+            <use href="./images/icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-nav" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-nav" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-nav" href="./index.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-contacts">
+        <ul class="menu-adress">
+          <li class="header-menu-phone">
+            <a class="menu-phone" href="tell:+11(000)1111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="header-menu-mail">
+            <a class="menu-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-icon-list">
+          <li class="menu-icon-place">
+            <svg width="24" height="24">
+              <use class="menu-icon" href="./images/icons.svg#instagram"></use>
+            </svg>
+          </li>
+          <li class="menu-icon-place">
+            <svg width="24" height="24">
+              <use class="menu-icon" href="./images/icons.svg#twitter"></use>
+            </svg>
+          </li>
+          <li class="menu-icon-place">
+            <svg width="24" height="24">
+              <use class="menu-icon" href="./images/icons.svg#facebook"></use>
+            </svg>
+          </li>
+          <li class="menu-icon-place">
+            <svg width="24" height="24">
+              <use class="menu-icon" href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./menu.js"></script>
   </body>
 </html>
